@@ -1,0 +1,75 @@
+* {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1#title {
+  text-align: center;
+}
+
+input[type=number] {
+  font-size: 14px;
+  border: whitesmoke thin solid;
+  text-align: right;
+  box-shadow: 1px 1px 10px whitesmoke;
+  margin: 3px 5% 3px 5%;
+  width: 90%;
+}
+
+input[type=range]{
+  margin: 0 5%;
+  width: 90%;
+}
+
+button {
+  height: 25px;
+  width: 40%;
+  border-radius: 25px;
+}
+
+button:not(:last-child){
+  margin: 5%;
+}
+
+button:focus {
+  outline: none;
+}
+
+button#slider-play-btn{
+  background-color: lightgreen;
+}
+
+button#slider-stop-btn{
+  background-color: pink;
+}
+
+label {
+  margin: 10px;
+}
+
+#slider-value {
+  text-align: center;
+  font-size: 28px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: thin grey solid;
+  box-shadow: 1px 1px 10px whitesmoke;
+}
+
+.col-10 {
+  width: calc(100%/12*10);
+  height: 100%;
+}
+
+.col-6 {
+  width: 50%;
+  height: 100%;
+}
+
+.col-2 {
+  width: calc(100%/12*2);
+  height: 100%;
+}
