@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <title>Natural Disasters API Test</title>
     <script type="text/javascript" src="./index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <h1 id="title">Natural Disaster API Visualizer</h1>
+    <h1 class="title">Natural Disaster API Visualizer</h1>
     <div class="row">
       <div class="col-2">
+        <div class="title">
+          <h2>Hurricanes</h2>
+          <h3>1851 - 2012</h3>
+        </div>
+        <br>
         <div>
           <div id="slider-value"></div>
           <input
@@ -21,19 +27,22 @@
             value="0"
           />
           <br/>
-          <button id="slider-play-btn">Play</button>
-          <button id="slider-stop-btn">Stop</button>
+          <button class="btn" id="slider-play-btn">Play</button>
+          <button class="btn" id="slider-stop-btn">Stop</button>
         </div>
         <div>
           <form>
             <label for="min">Min</label>
-            <input type="number" id="min" name="min" value="1950"/><br/>
+            <input type="number" id="min" value="1950"/><br/>
 
             <label for="max">Max</label>
-            <input type="number" id="max" name="max" value="2011"/><br/>
+            <input type="number" id="max" value="2011"/><br/>
 
             <label for="step">Step</label>
-            <input type="number" id="step" name="step" value="1"/><br/>
+            <input type="number" id="step" value="1"/><br/>
+
+            <label for="interval">Interval (seconds)</label>
+            <input type="number" id="interval" min="0.1" step="0.1" value="0.5"/><br/>
           </form>
         </div>
       </div>

@@ -45,9 +45,11 @@ function initMap() {
 document.addEventListener('DOMContentLoaded', () => {
   const slider = q('#slider')
   const sliderValue = q('#slider-value')
+
   const minValue = q('#min')
   const maxValue = q('#max')
   const stepValue = q('#step')
+  const intervalValue = q('#interval')
 
   const sliderPlayBtn = q('#slider-play-btn')
   const sliderStopBtn = q('#slider-stop-btn')
@@ -106,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
           slider.stepUp()
           updateSliderValue()
         }
-      }, 1000)
+      }, intervalValue.value * 1000)
     }
 
   })
