@@ -79,14 +79,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   minValue.addEventListener('input', () => {
     slider['min'] = minValue.value
+    stopTimer()
   })
 
   maxValue.addEventListener('input', () => {
     slider['max'] = maxValue.value
+    stopTimer()
   })
 
   stepValue.addEventListener('input', () => {
     slider['step'] = stepValue.value
+    stopTimer()
   })
 
 
