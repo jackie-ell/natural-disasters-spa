@@ -2,6 +2,10 @@
   font-family: 'Rubik', sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 .title {
   text-align: center;
 }
@@ -46,12 +50,12 @@ button:focus {
 }
 
 .btn {
+  width: 40%;
   border: none;
   border-radius: 2px;
   display: inline-block;
   height: 36px;
   line-height: 36px;
-  padding: 0 2rem;
   text-transform: uppercase;
   vertical-align: middle;
 }
@@ -80,9 +84,22 @@ label {
 
 .row {
   width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
-  box-shadow: 10px 10px 10px whitesmoke;
+}
+
+.sidebar {
+  border-right: solid thin whitesmoke;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 1px 0px 5px lightgrey;
+}
+
+.main {
+  padding: 0 15px;
 }
 
 .col-10 {
